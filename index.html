@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./img/Favicon.png" type="image/x-icon">
+    <title>GitHub repositories search</title>
+</head>
+<body>
+    <div class="container">
+        <h1>GitHub repositories search</h1>
+        
+        <label for="search-input">Enter a search query:</label>
+        <input type="text" id="search-input" placeholder="For example, public-apis">
+        <input type="submit" value="Find" id="search-button">
+        
+        <div id="error-message"></div>
+        
+        <div class="results">
+            <table id="results-table">
+                <thead>
+                    <tr>
+                        <th>Repository name</th>
+                        <th>Number of stars &#10031;</th>
+                        <th>Last update date</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+         
+            <div id="no-results-message"></div>
+        </div>
+        
+    </div>
+<script src="./script.js"></script>
+</body>
+</html>
